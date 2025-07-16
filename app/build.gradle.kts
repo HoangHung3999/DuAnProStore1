@@ -4,12 +4,12 @@ plugins {
 
 android {
     namespace = "fpoly.hungph53757.duanprostore"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "fpoly.hungph53757.duanprostore"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 

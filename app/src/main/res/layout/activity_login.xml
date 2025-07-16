@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp"
+    android:background="#0C0C0C">
+
+    <!-- Logo cửa hàng -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgLogo"/>
+
+    <!-- Tên app + slogan -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PROSTORE"
+     />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SLOGAN HERE"
+     />
+
+    <!-- Chào mừng -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to PROSTORE !!"
+     />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login to Continue"
+     />
+
+    <!-- Ô nhập email -->
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtEmail"
+        android:padding="16dp"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+     />
+
+    <!-- Ô nhập password -->
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtPassword"
+        android:hint="Password"
+        android:padding="16dp"
+        android:inputType="textPassword"
+        android:drawableEnd="@drawable/ic_eye"
+     />
+
+    <!-- Nút đăng nhập -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSignIn"
+        android:text="Sign In"
+     />
+
+    <!-- Nút Google -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnGoogle"
+        android:text="Sign in with Google"
+        android:drawableStart="@drawable/ic_google"
+     />
+
+    <!-- Link điều hướng -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtRegister"
+        android:text="Don’t have account? Click Register"
+     />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtReset"
+        android:text="Forget Password? Click Reset"
+     />
+
+</LinearLayout>
