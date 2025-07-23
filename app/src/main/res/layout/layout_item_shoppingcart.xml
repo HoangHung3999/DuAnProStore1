@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/img_item_shoppingCart_avata"
+            android:layout_width="150dp"
+            android:layout_height="148dp"
+            android:scaleType="center"
+            android:src="@mipmap/ic_launcher_round"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingStart="8dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txt_item_shoppingCart_txtaotreem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Áo trẻ em"
+                android:textSize="30sp"
+                android:layout_margin="10dp"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/txt_item_shoppingCart_size"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="M"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="20dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:background="#333333"
+                    android:textColor="#FFFFFF"/>
+                <TextView
+                    android:id="@+id/txt_item_shoppingCart_giatien"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="119K"
+
+                    android:layout_marginLeft="15dp"
+                    android:textSize="25sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/txt_item_shoppingCart_vnd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:text="VND"
+                    android:textSize="25sp"
+                    android:textColor="#FF9800"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/txt_item_shoppingCart_giamsoluong"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="40sp"/>
+                <TextView
+                    android:id="@+id/txt_item_shoppingCart_soluong"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"/>
+                <TextView
+                    android:id="@+id/txt_item_shoppingCart_tangsoluong"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
