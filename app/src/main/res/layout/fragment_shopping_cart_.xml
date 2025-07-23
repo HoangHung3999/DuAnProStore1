@@ -3,37 +3,52 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
+    android:background="@color/black"
     tools:context=".BottomNavigationFragment.ShoppingCart_Fragment">
 
     <LinearLayout
-        android:layout_marginTop="30dp"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:layout_height="wrap_content">
+        android:orientation="horizontal">
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:src="@drawable/baseline_density_medium_24"/>
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/bg_cartshopping_avata_boder"
+            android:padding="14dp"
+            android:src="@drawable/productlist_icon" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Giỏ hàng"
-            android:textSize="30sp"
             android:layout_weight="1"
-            android:textStyle="bold"
-            android:gravity="center"/>
-        <ImageView
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:src="@drawable/baseline_supervised_user_circle_24"/>
+            android:gravity="center"
+            android:text="Giỏ hàng"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="20dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp"
+            app:strokeColor="#4E5053"
+            app:strokeWidth="1dp">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/user_avata_icon" />
+        </com.google.android.material.card.MaterialCardView>
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="41dp"
         android:layout_weight="1"
         android:id="@+id/recyclerView_shoppingCart"/>
 
@@ -53,8 +68,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="25sp"
-                android:textStyle="bold"
                 android:layout_gravity="center"
+                android:textColor="#AEAEAE"
                 android:text="Tổng"/>
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -64,14 +79,14 @@
                     android:id="@+id/txt_shoppingCart_tonggiatien"
                     android:textSize="27sp"
                     android:textStyle="bold"
-                    android:textColor="#FF9800"
+                    android:textColor="#FFFFFF"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="357K "/>
                 <TextView
                     android:textSize="27sp"
                     android:textStyle="bold"
-                    android:textColor="#FF9800"
+                    android:textColor="#D17842"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="VND"/>
@@ -79,14 +94,15 @@
         </LinearLayout>
         <Button
             android:id="@+id/btn_shoppingCart_thanhtoan"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:layout_weight="1"
-            android:text="Thanh toán"
-            android:textSize="30sp"
-            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
             android:layout_marginLeft="20dp"
-            android:backgroundTint="#FF9800"/>
+            android:layout_weight="1"
+            android:backgroundTint="#D17842"
+            android:text="Thanh toán"
+            android:textSize="22sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
 </LinearLayout>

@@ -39,7 +39,7 @@ public class ShoppingCart_Adapter extends RecyclerView.Adapter<ShoppingCart_Adap
         ShoppingCart_Model item = arrayList_ShoppingCart.get(position);
         holder.img_item_shoppingCart_avata.setImageResource(item.getShoppingCart_Image());
         holder.txt_item_shoppingCart_txtaotreem.setText(item.getShoppingCart_Name());
-        holder.txt_item_shoppingCart_giatien.setText(String.valueOf(item.getShoppingCart_Price()));
+        holder.txt_item_shoppingCart_giatien.setText(String.valueOf(item.getShoppingCart_Price()+ "K"));
         holder.txt_item_shoppingCart_giamsoluong.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

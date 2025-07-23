@@ -36,11 +36,11 @@ public class ShoppingCart_Fragment extends Fragment {
         btn_shoppingCart_thanhtoan = view.findViewById(R.id.btn_shoppingCart_thanhtoan);
 
         arrayList_ShoppingCart = new ArrayList<>();
-        arrayList_ShoppingCart.add(new ShoppingCart_Model( R.drawable.ic_launcher_background, 1, "Áo trẻ em", 100));
-        arrayList_ShoppingCart.add(new ShoppingCart_Model(R.drawable.ic_launcher_background, 1, "Áo trẻ em", 100));
-        arrayList_ShoppingCart.add(new ShoppingCart_Model(R.drawable.ic_launcher_background, 1, "Áo trẻ em", 100));
-        arrayList_ShoppingCart.add(new ShoppingCart_Model(R.drawable.ic_launcher_background, 1, "Áo trẻ em", 100));
-        arrayList_ShoppingCart.add(new ShoppingCart_Model(R.drawable.ic_launcher_background, 1, "Áo trẻ em", 100));
+        arrayList_ShoppingCart.add(new ShoppingCart_Model( R.drawable.user_avata_icon, 1, "Áo trẻ em", 100));
+        arrayList_ShoppingCart.add(new ShoppingCart_Model(R.drawable.user_avata_icon, 1, "Áo trẻ em", 100));
+        arrayList_ShoppingCart.add(new ShoppingCart_Model(R.drawable.user_avata_icon, 1, "Áo trẻ em", 100));
+        arrayList_ShoppingCart.add(new ShoppingCart_Model(R.drawable.user_avata_icon, 1, "Áo trẻ em", 100));
+        arrayList_ShoppingCart.add(new ShoppingCart_Model(R.drawable.user_avata_icon, 1, "Áo trẻ em", 100));
 
 
         shoppingCartAdapter = new ShoppingCart_Adapter(getContext(),arrayList_ShoppingCart);

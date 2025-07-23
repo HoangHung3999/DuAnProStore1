@@ -4,14 +4,15 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp"
     app:cardCornerRadius="12dp"
-    app:cardElevation="4dp">
+    app:cardElevation="4dp"
+    android:layout_margin="20dp">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="horizontal"
+        android:background="@drawable/bg_cartshopping_gradient_fade"
         android:padding="8dp">
 
         <ImageView
@@ -19,62 +20,62 @@
             android:layout_width="150dp"
             android:layout_height="148dp"
             android:scaleType="center"
-            android:src="@mipmap/ic_launcher_round"/>
+            android:src="@drawable/user_avata_icon"/>
 
         <LinearLayout
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
             android:paddingStart="8dp"
             android:orientation="vertical">
             <TextView
                 android:id="@+id/txt_item_shoppingCart_txtaotreem"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
                 android:text="Áo trẻ em"
+                android:textColor="@color/white"
                 android:textSize="30sp"
-                android:layout_margin="10dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:gravity="center_vertical">
+                android:layout_marginTop="7dp"
+                android:gravity="left">
                 <TextView
                     android:id="@+id/txt_item_shoppingCart_size"
-                    android:layout_width="60dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="70dp"
+                    android:layout_height="45dp"
                     android:text="M"
+                    android:layout_marginLeft="10dp"
                     android:textSize="20sp"
-                    android:layout_marginLeft="20dp"
                     android:textStyle="bold"
                     android:gravity="center"
-                    android:padding="5dp"
-                    android:background="#333333"
+                    android:background="@drawable/bg_cartshopping_black_rounded"
                     android:textColor="#FFFFFF"/>
                 <TextView
                     android:id="@+id/txt_item_shoppingCart_giatien"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="119K"
-
-                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="6dp"
                     android:textSize="25sp"
                     android:textStyle="bold"/>
                 <TextView
                     android:id="@+id/txt_item_shoppingCart_vnd"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="6dp"
                     android:text="VND"
-                    android:textSize="25sp"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="24sp"
                     android:textColor="#FF9800"
                     android:textStyle="bold"/>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:orientation="horizontal"
                 android:gravity="center"
                 android:layout_marginTop="5dp">
@@ -82,29 +83,34 @@
                 <TextView
                     android:id="@+id/txt_item_shoppingCart_giamsoluong"
                     android:layout_width="48dp"
-                    android:layout_height="48dp"
-                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_cartshopping_orange_rounded"
+                    android:gravity="center_horizontal"
                     android:text="-"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:textSize="40sp"/>
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
                 <TextView
                     android:id="@+id/txt_item_shoppingCart_soluong"
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
                     android:gravity="center"
                     android:text="1"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/bg_cartshopping_black_stroke"
                     android:textStyle="bold"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="30sp"/>
                 <TextView
                     android:id="@+id/txt_item_shoppingCart_tangsoluong"
                     android:layout_width="48dp"
-                    android:layout_height="48dp"
+                    android:layout_height="wrap_content"
                     android:gravity="center"
                     android:text="+"
+                    android:background="@drawable/bg_cartshopping_orange_rounded"
                     android:textStyle="bold"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="30sp"/>
 
             </LinearLayout>

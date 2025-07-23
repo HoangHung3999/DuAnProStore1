@@ -12,13 +12,17 @@ import androidx.fragment.app.Fragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import fpoly.hungph53757.duanprostore.BottomNavigationFragment.Home_Fragment;
+import fpoly.hungph53757.duanprostore.BottomNavigationFragment.ProductList_Fragment;
 import fpoly.hungph53757.duanprostore.BottomNavigationFragment.ShoppingCart_Fragment;
+import fpoly.hungph53757.duanprostore.BottomNavigationFragment.User_Fragment;
 
 public class MainActivity extends AppCompatActivity {
 
     BottomNavigationView bottomNavigationView;
     Fragment cartFragment = new ShoppingCart_Fragment();
+    Fragment productListFragment = new ProductList_Fragment();
     Fragment homeFragment = new Home_Fragment();
+    Fragment userFragment = new User_Fragment();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,8 +41,14 @@ public class MainActivity extends AppCompatActivity {
             if(id == R.id.item_home){
                 loadFragment(homeFragment);
                 return true;
+            }else if (id==R.id.item_productList) {
+                loadFragment(productListFragment);
+                return true;
             } else if (id==R.id.item_cart) {
                 loadFragment(cartFragment);
+                return true;
+            }else if (id==R.id.item_user) {
+                loadFragment(userFragment);
                 return true;
             }
             return false;
